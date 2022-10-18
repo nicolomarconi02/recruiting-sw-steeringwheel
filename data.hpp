@@ -50,6 +50,7 @@ private slots:
         emit dataReceived(BMS_LV_CURRENT, QRandomGenerator::global()->bounded(30.0f));
 
         // PER TESTARE IL COMPORTAMENTO DEL POWER_LIMITER CON I PARAMETRI SPEED E RPM, TOGLIERE IL COMMENTO SULLA MODALITA' SCELTA
+        // E COMMENTARE L'ISTRUZIONE CHE SI TROVA A RIGA 67
         //emit dataReceived(POWER_LIMITER, 0.0f);
         //emit dataReceived(POWER_LIMITER, 0.2f);
         //emit dataReceived(POWER_LIMITER, 0.4f);

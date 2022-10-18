@@ -74,8 +74,6 @@ void BackEnd::setValueRPM(const float value){
         return;
     if(m_valuePOWERLIMITER == 80 && value > 12000)
         return;
-    if(m_valuePOWERLIMITER == 100)
-        return;
 
     // SE NESSUNA DELLE CONDIZIONI PRECEDENTI SI VERIFICA ALLORA MEMORIZZA IL VALORE DEL SENSORE E
     // NOTIFICA AL FILE "main.qml" CHE IL VALORE E' STATO CAMBIATO
@@ -99,8 +97,6 @@ void BackEnd::setValueSPEED(const float value){
     if(m_valuePOWERLIMITER == 60 && value > 80)
         return;
     if(m_valuePOWERLIMITER == 80 && value > 100)
-        return;
-    if(m_valuePOWERLIMITER == 100)
         return;
 
     // SE NESSUNA DELLE CONDIZIONI PRECEDENTI SI VERIFICA ALLORA MEMORIZZA IL VALORE DEL SENSORE E
